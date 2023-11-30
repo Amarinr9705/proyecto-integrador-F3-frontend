@@ -1,0 +1,111 @@
+$fondo-oscuro: #8bba88;
+$fondo-items: #a7caa5;
+$fondo-claro: rgb(251, 247, 240);
+$color-tipografia: #303633;
+$sombra-estandar: 0px 8px 15px rgba(0, 0, 0, 0.2);
+$fondo-cards: rgb(248, 239, 221);
+
+.aboutUs {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    &__tittle-container {
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $fondo-claro;
+      width: 100%;
+      margin-top: 90px;
+    }
+    &__container-block {
+      min-height: 75px;
+      height: fit-content;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__mainImg {
+      width: 35%;
+      height: auto;
+      box-shadow: $sombra-estandar;
+      border-radius: 10px;
+    }
+    &__text-blk {
+      padding: 10px 10px;
+      line-height: 25px;
+    }
+    &__headingText {
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 34px;
+      color: $color-tipografia;
+      padding: 0 10px 0;
+      margin-bottom: 10px;
+    }
+    &__allText {
+      margin-left: 40px;
+      width: 40%;
+    }
+    &__description {
+      font-size: 20px;
+      line-height: 34px;
+      color: rgb(102, 102, 102);
+      padding: 0px 10px;
+    }
+    &__container-block {
+      justify-content: center;
+      align-items: center;
+      padding: 10px 10px;
+    }
+    &__bottomContainer {
+      flex-direction: row-reverse;
+      background-color: $fondo-claro;
+      border-radius: 5px;
+    }
+    &__aboveText {
+      margin: 0 0 0 40px;
+    }
+    &__bottomText {
+      margin: 0 40px 0 0;
+    }
+    @media (max-width: 1024px) {
+      &__container-block {
+        max-width: 850px;
+      }
+      &__mainImg {
+        width: 55%;
+        height: auto;
+      }
+      &__allText {
+        width: 40%;
+        margin-left: 20px;
+      }
+      &__bottomContainer {
+        margin: 80px 0 50px 0;
+      }
+      &__bottomText {
+        margin: 30px 40px 0 0;
+      }
+    }
+    @media (max-width: 768px) {
+      &__mainImg {
+        width: 90%;
+      }
+      &__allText {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      &__container-block {
+        flex-direction: column;
+        height: auto;
+      }
+      &__bottomContainer {
+        margin: 50px auto;
+      }
+    }
+  }

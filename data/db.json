@@ -1,0 +1,84 @@
+{
+  "productos": [
+    {
+      "nombre": "Escritorio",
+      "foto": "img/Escritorio.webp",
+      "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+      "precio": 250.5,
+      "stock": "44",
+      "marca": "maderos",
+      "categoria": "muebles",
+      "envio": false
+    },
+    {
+      "nombre": "Almohada Boxi",
+      "foto": "img/Almohada.webp",
+      "detalles": "Quasi cupiditate quisquam facere molestiae",
+      "precio": 240.3,
+      "stock": "4",
+      "marca": "comodisimos",
+      "categoria": "habitacion",
+      "envio": true
+    },
+    {
+      "nombre": "Caja fuerte",
+      "foto": "img/caja-fuerte.webp",
+      "detalles": "Saepe enim ipsa facilis velit quidem voluptatibus totam dicta",
+      "precio": 985,
+      "stock": 4,
+      "marca": "Sleek Cotton Chips",
+      "categoria": "muebles",
+      "envio": false
+    },
+    {
+      "nombre": "Parlante JBL",
+      "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "foto": "img/parlante-jbl.webp",
+      "precio": 678,
+      "stock": 7,
+      "marca": "JBL",
+      "categoria": "sonido",
+      "envio": true
+    },
+    {
+      "nombre": "Kit basecama",
+      "detalles": "Facere molestiae odio neque rerum provident voluptas",
+      "foto": "img/kit-basecama.webp",
+      "precio": 1200,
+      "stock": 4,
+      "marca": "comodisimos",
+      "categoria": "habitacion",
+      "envio": true
+    },
+    {
+      "nombre": "Juego de ollas",
+      "precio": 332.22,
+      "stock": 4,
+      "marca": "royal",
+      "categoria": "cocina",
+      "detalles": "Natus iure quasi cupiditate quisquam facere molestiae odio neque rerum provident voluptas!",
+      "foto": "img/Ollas.webp",
+      "envio": true
+    },
+    {
+      "nombre": "Mesa multi-uso",
+      "precio": 333.22,
+      "stock": 2,
+      "marca": "DJI",
+      "categoria": "Drones",
+      "detalles": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "foto": "img/mesa-multiuso.webp",
+      "envio": false
+    },
+    {
+      "nombre": "Parlante Bose",
+      "precio": "2333",
+      "stock": "2",
+      "marca": "Bose",
+      "categoria": "sonido",
+      "detalles": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "foto": "img/parlante-bose.webp",
+      "envio": true
+    }
+  ]
+}

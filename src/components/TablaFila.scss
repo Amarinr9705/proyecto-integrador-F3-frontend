@@ -1,0 +1,27 @@
+
+$fondo-oscuro: #8bba88;
+$fondo-items: #a7caa5;
+$fondo-claro: rgb(251, 247, 240);
+$color-tipografia: #303633;
+$sombra-estandar: 0px 8px 15px rgba(0, 0, 0, 0.2);
+$fondo-cards: rgb(248, 239, 221);
+.img-row {
+    width: 50px;
+}
+
+.btn{
+    color: $color-tipografia;
+    padding: 0.4em 2em;
+    text-decoration: none;
+    border-radius: 8px;
+    transition-duration: 80ms;
+    transition-property: scale, box-shadow;
+    box-shadow: $sombra-estandar;
+    margin: 2px 0;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    font-size: 13px;
+    background-color: #aeaeae;
+    border: none;
+    width: 120px;
+}

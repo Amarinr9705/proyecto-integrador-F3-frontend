@@ -1,0 +1,135 @@
+$fondo-oscuro: #8bba88;
+$fondo-items: #a7caa5;
+$fondo-claro: rgb(251, 247, 240);
+$color-tipografia: #303633;
+$sombra-estandar: 0px 8px 15px rgba(0, 0, 0, 0.2);
+$fondo-cards: rgb(248, 239, 221);
+.card {
+    outline: none;
+    width: 350px;
+    height: auto;
+    overflow: hidden;
+    box-shadow: $sombra-estandar;
+    border-radius: 16px;
+    // transition: scale .5s, box-shadow .5s, translate 5s; /* No puede ser all */ /* (NO FUNCIONA) */
+    transition: all 0.3s;
+    background-color: $fondo-cards;
+    &:hover, /* .card:hover */
+      &:focus {
+      transform: scale(1.03) translate(0px, -20px);
+      transform-origin: bottom;
+      box-shadow: $sombra-estandar;
+    }
+    &:nth-child(4n + 4) {
+      width: 80vw;
+    }
+    &__image-container {
+      height: 250px;
+      overflow: hidden;
+      border-radius: 16px;
+    }
+    &__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    button {
+      color: $color-tipografia;
+        padding: 0.4em 2em;
+        text-decoration: none;
+        border-radius: 8px;
+        transition-duration: 80ms;
+        transition-property: scale, box-shadow;
+        box-shadow: $sombra-estandar;
+        margin: 2px 0;
+        letter-spacing: 0.2em;
+        font-weight: bold;
+        font-size: 13px;
+        background-color: #aeaeae;
+        border: none;
+        
+        &:hover{
+          background-color: #ddd;
+        }
+    }
+    &__content {
+      padding: 1em;
+      & h2 {
+        color: $color-tipografia;
+        border-bottom: 2px solid $color-tipografia;
+      }
+      & p {
+        padding-top: 8px;
+        color: #303633b5;
+      }
+      & i {
+        padding: 15px 10px;
+        margin-left: 25px;
+        cursor: pointer;
+        border-radius: 30%;
+        color: $color-tipografia;
+        box-shadow: $sombra-estandar;
+        background-color: $fondo-claro;
+      }
+      & i:hover {
+        scale: (1.1);
+      }
+    }
+  }
+  
+
+  .section-cards {
+    background-color: #fff;
+    &__header {
+      height: 100vh;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(img/header-gif.gif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      padding: 1em 0em;
+      margin-top: 93px;
+    }
+    &__header p,
+    &__header h1 {
+      display: flex;
+      justify-content: center;
+      color: whitesmoke;
+    }
+    &__header h1 {
+      margin-top: 20%;
+      padding: auto 0;
+      font-size: 2.5em;
+      text-align: center;
+      
+    }
+    &__header p {
+      font-size: 1.5em;
+      text-align: center;
+    }
+  }
+  .fa-arrow-down {
+    position: absolute;
+    bottom: 220px;
+    border: solid 1px $color-tipografia;
+    color: $color-tipografia;
+    border-radius: 100%;
+    padding: 2px;
+    cursor: pointer;
+    background-color: $fondo-claro;
+  }
+  .fa-arrow-down:hover {
+    box-shadow: $sombra-estandar;
+  }
+  .cards-container {
+    border: solid 1px $fondo-claro;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    padding: 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    justify-content: center;
+    margin: 30px;
+    background-color: $fondo-claro;
+  }

@@ -1,0 +1,83 @@
+
+$fondo-oscuro: #8bba88;
+$fondo-items: #a7caa5;
+$fondo-claro: #fbf7f0;
+$color-tipografia: #303633;
+$sombra-estandar: 0px 8px 15px rgba(0, 0, 0, 0.2);
+$fondo-cards: rgb(248, 239, 221);
+
+.form__container{
+    padding: 160px 0 70px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em 1em;
+    gap: 20px;
+    width: 65%;
+    margin: 0 auto;
+    box-shadow: $sombra-estandar;
+    background-color: $fondo-claro;
+    &__title {
+      font-size: 22px;
+      font-weight: bold;
+      border-bottom: 2px solid $fondo-oscuro;
+      width: 41%;
+    }
+    &__message {
+      border-radius: 8px;
+    }
+    @media (min-width: 768px) {
+      & {
+        /* .main-header */
+        width: 40%;
+      }
+    }
+    @media (max-width: 918px) {
+      & {
+        /* .main-header */
+        width: 65%;
+      }
+    }
+  }
+  form > input {
+    height: 30px;
+    border-radius: 8px;
+    margin-top: -10px;
+    font-size: 1em;
+  }
+  form > label {
+    color: $color-tipografia;
+    font-weight: bold;
+  }
+/*   form > button {
+    width: 100%;
+    background: $fondo-oscuro;
+    border-radius: 10px;
+    padding: 12px;
+    color: $color-tipografia;
+    margin: 16px 0;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  } */
+  form > button {
+    color: $color-tipografia;
+    padding: 0.4em 2em;
+    text-decoration: none;
+    border-radius: 8px;
+    transition-duration: 80ms;
+    transition-property: scale, box-shadow;
+    box-shadow: $sombra-estandar;
+    margin: 2px 0;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    font-size: 13px;
+    background-color: #aeaeae;
+    border: none;
+
+    &:hover{
+      background-color: #ddd;
+    }
+  }

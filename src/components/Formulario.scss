@@ -1,0 +1,44 @@
+
+$fondo-oscuro: #8bba88;
+$fondo-items: #a7caa5;
+$fondo-claro: rgb(251, 247, 240);
+$color-tipografia: #303633;
+$sombra-estandar: 0px 8px 15px rgba(0, 0, 0, 0.2);
+$fondo-cards: rgb(248, 239, 221);
+
+.container-fluid{
+    margin-top: 120px;
+    margin-bottom: 120px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 20px;
+    background-color: #fbf7f0;
+    width: 50%;
+
+    
+
+    h2{
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 5px;
+    }
+
+    button{
+        color: $color-tipografia;
+        padding: 0.4em 2em;
+        text-decoration: none;
+        border-radius: 8px;
+        transition-duration: 80ms;
+        transition-property: scale, box-shadow;
+        box-shadow: $sombra-estandar;
+        margin: 2px 0;
+        letter-spacing: 0.2em;
+        font-weight: bold;
+        font-size: 13px;
+        background-color: #aeaeae;
+        border: none;
+    }
+
+    button:hover{
+        background-color: #ddd;
+    }
+}
